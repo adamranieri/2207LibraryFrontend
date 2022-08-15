@@ -4,22 +4,22 @@
     <title>Register Book</title>
 </head>
 <body>
-    <nav><a href="">Book Viewer</a></nav>
+    <nav><a href="book-viewer.html">Book Viewer</a></nav>
 
     <h1>Register Book</h1>
 
     <!-- Buttons in forms cause a submission event. It automatically tries to submit the informtaion to a server. Before AJAX html forms 
-    were the only way to submit info to a server on a webpage. IT FORCES THE WEB PAGE TO REALOAD -->
+    were the only way to submit info to a server on a webpage. IT FORCES THE WEB PAGE TO REALOAD. Inputs in a form can get form validation-->
     <form>
 
         <fieldset>
             <legend>Book Info</legend>
 
             <label for="inputTitle">Title</label>
-            <input id="inputTitle" type="text" placeholder="Kite Runner">
+            <input id="inputTitle" type="text" placeholder="Kite Runner" required minlength="3" maxlength="10"/>
     
             <label for="inputAuthor">Author</label>
-            <input id="inputAuthor" type="text" placeholder="Khaled Hosseini">
+            <input id="inputAuthor" type="text" placeholder="Khaled Hosseini" required/>
 
         </fieldset>
 

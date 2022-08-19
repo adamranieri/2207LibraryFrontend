@@ -33,6 +33,8 @@
     const inputTitle = document.getElementById("inputTitle");
     const inputAuthor = document.getElementById("inputAuthor");
 
+    console.log(localStorage.getItem("employee"))
+
     
     document.addEventListener("submit", async event => {
         event.preventDefault();// will catch the submit event from the form and prevent sending an HTTP request immediately and reloading the page
